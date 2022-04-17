@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body>
+	<h1>JavaScript to convert a comma-separated values (CSV) String to a 2D array. Anew line indicates a new row in the array.</h1>
+</body>
+<script>
+	const csv= (data, delimiter = ',', omitFirstRow = false) =>
+  	data
+    	.slice(omitFirstRow ? data.indexOf('\n') + 1 : 0)
+   	.split('\n')
+    	.map(v => v.split(delimiter));
+
+	document.write(csv('a,b\nc,d')+"<br>"); 
+	document.write(csv('a;b\nc;d', ';')); 
+	
+</script>
+</html>

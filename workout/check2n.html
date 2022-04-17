@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body>
+	<h1>Javascript program to check two numbers and return true if one of the number is 100 or if the sum of the two numbers is 100</h1>
+</body>
+<script>
+	
+	function test100(x, y) 
+		{
+  			return ((x == 100 || y == 100) || (x + y == 100));
+		}
+	
+	document.write("<h2>"+"Input - (50,50) | Output - "+test100(50, 50)+"<br>"+"<h2>")
+	document.write("<h2>"+"Input - (100,50) | Output - "+test100(100, 50)+"<br>"+"<h2>")
+	document.write("<h2>"+"Input - (20,100) | Output - "+test100(20, 100)+"<br>"+"<h2>")
+	document.write("<h2>"+"Input - (20,30) | Output - "+test100(20, 30)+"<br>"+"<h2>")
+</script>
+</html>
