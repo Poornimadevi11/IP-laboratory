@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+<body>
+	<h1>JavaScript program to change the background color by generating a random hexadecimal color code</h1>
+	<center><h1>
+  	<button id="a">Generate New Random Color</button><br>
+  	<span id="color1"></span>
+	</h1></center>
+</body>
+<script>
+    function setbg(){
+    var letters = "0123456789ABCDEF";
+    var color = '#';
+    for (var i = 0; i < 6; i++)
+       color += letters[(Math.floor(Math.random() * 16))];
+    document.body.style.backgroundColor = color;
+   
+    color1.innerHTML = color;}
+    a.addEventListener("click", setbg);
+    
+    setbg();
+
+</script>
+
+</html>

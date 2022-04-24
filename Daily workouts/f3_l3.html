@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	<h1>JavaScript program to create a new String from a given string the first 3 characters and the last 3 characters of a string and adding them together. The String length must be 3 or more, if not, the original string is returned</h1>
+</body>
+<script>
+	function first3_last3(text){
+		var a = text.substring(0,3);
+		var b = text.substring(text.length-3,text.length+1);
+		if(text.length<3){
+			return text;}
+		else{
+			return a+b;}}
+	
+	document.write("<h3>"+"Input - poornima | Output - "+first3_last3("poornima")+"</h3>");
+	document.write("<h3>"+"Input - po | Output - "+first3_last3("po")+"</h3>");
+</script>
+</html>
